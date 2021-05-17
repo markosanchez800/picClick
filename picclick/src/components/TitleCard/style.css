@@ -1,0 +1,10 @@
+.jumbotron{
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position:right 95% bottom 80%;
+}
+
+.title{
+    font-size:60px;
+}

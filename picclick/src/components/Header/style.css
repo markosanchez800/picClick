@@ -1,6 +1,7 @@
 *{
-    font-family: 'Codystar', cursive;
-    color:rgb(255, 251, 2);
+    font-family: 'Fugaz One', cursive;
+    color:rgba(255, 251, 2, 0.849);
+    font-size: 30px;
 }
 
 .navbar{
@@ -9,14 +10,12 @@
     background-color: rgb(53, 130, 218);
 }
 
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .status{
-    font-size: 30px;
-}
-
-.currScore{
-    font-size: 30px;
-}
-
-.highScore{
-    font-size: 30px;
+    text-align: center;
 }
