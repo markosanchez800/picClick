@@ -13,6 +13,17 @@ class App extends Component {
     highScore: 0
   };
 
+  shuffleCards = array => {
+    let oG;
+    for (let i = array.length - 1; i > 0; i--)
+    {
+      let rand = Math.floor(Math.random() * (i + 1));
+      oG = array[i];
+      array[i] = array[rand];
+      array[rand] = oG;
+    }
+    return array;
+  }
 
 render() {
   return (
@@ -28,6 +39,7 @@ render() {
     id={vaultboy.id}
     name={vaultboy.name}
     image={vaultboy.image}
+    onClick={this.shuffleCards(vaultboy)}
     />
   ))}
   </Wrapper>
