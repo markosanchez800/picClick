@@ -2,61 +2,61 @@
     {
         "id":1,
         "name":"Aint that a kick in the head",
-        "image":"1.png"
+        "image":"./images/1.png"
     },
     {
         "id":2,
         "name":"All or nothing",
-        "image":"2.png"
+        "image":"./images/2.png"
     },
     {
         "id":3,
         "name":"Arizona killer",
-        "image":"3.png"
+        "image":"./images/3.png"
     },
     {
         "id":4,
         "name":"Caravan master",
-        "image":"4.png"
+        "image":"./images/4.png"
     },
     {
         "id":5,
         "name":"Cardiac arrest",
-        "image":"5.png"
+        "image":"./images/5.png"
     },
     {
         "id":6,
         "name":"Condemned to repeat it",
-        "image":"6.png"
+        "image":"./images/6.png"
     },
     {
         "id":7,
         "name":"Outsmarted",
-        "image":"7.png"
+        "image":"./images/7.png"
     },
     {
         "id":8,
         "name":"Ring a ding ding",
-        "image":"8.png"
+        "image":"./images/8.png"
     },
     {
         "id":9,
         "name":"That lucky old sun",
-        "image":"9.png"
+        "image":"./images/9.png"
     },
     {
         "id":10,
         "name":"The legend of the star",
-        "image":"10.png"
+        "image":"./images/10.png"
     },
     {
         "id":11,
         "name":"Wild card",
-        "image":"11.png"
+        "image":"./images/11.png"
     },
     {
         "id":12,
         "name":"Youll know when it happens",
-        "image":"12.png"
+        "image":"./images/12.png"
     }
 ]
