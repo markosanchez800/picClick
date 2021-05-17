@@ -7,15 +7,22 @@ import vaultboy from './vaultboy.json';
 
 class App extends Component {
   state = {
-    vaultboy: vaultboy
+    vaultboy: vaultboy,
+    message:"To secure your spot in Vault 108, click on all the images without any repeats!",
+    currScore: 0,
+    highScore: 0
   };
 
 
 render() {
   return (
-    <Wrapper>
-    <Header></Header>
+    <Wrapper> 
     <TitleCard></TitleCard>
+    <Header
+      message={this.state.message}
+      currScore={this.state.currScore}
+      highScore={this.state.highScore}
+    />
   {this.state.vaultboy.map(vaultboy => (
     <GameCard
     id={vaultboy.id}

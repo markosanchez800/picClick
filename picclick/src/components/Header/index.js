@@ -5,9 +5,9 @@ function Header(props) {
     return (
         <nav className='navbar'>
             <ul>
-            <li className='status'>A{props.status}</li>
             <li className='currScore'>Score: {props.currScore}</li>
             <li className='highScore'>High Score: {props.highScore}</li>
+            <li className='status'>{props.message}</li>
             </ul>
         </nav>
     );
