@@ -1,0 +1,22 @@
+*{
+    font-family: 'Codystar', cursive;
+    color:rgb(255, 251, 2);
+}
+
+.navbar{
+    width: 100%;
+    height:100px;
+    background-color: rgb(53, 130, 218);
+}
+
+.status{
+    font-size: 30px;
+}
+
+.currScore{
+    font-size: 30px;
+}
+
+.highScore{
+    font-size: 30px;
+}
