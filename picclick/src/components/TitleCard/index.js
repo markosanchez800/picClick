@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import vaultboyheader from '../../vaultboys02.png'
+import vaultboyheader from '../../vaultboymotion.gif'
 
 function TitleCard(props){
     return (

@@ -13,6 +13,7 @@ class App extends Component {
     highScore: 0
   };
 
+  //fisher yates shuffle to randomize cards
   shuffleCards = array => {
     let oG;
     for (let i = array.length - 1; i > 0; i--)
@@ -23,6 +24,10 @@ class App extends Component {
       array[rand] = oG;
     }
     return array;
+  }
+
+  verifyClick = () => {
+    this.shuffleCards(vaultboy);
   }
 
 render() {
@@ -39,7 +44,7 @@ render() {
     id={vaultboy.id}
     name={vaultboy.name}
     image={vaultboy.image}
-    onClick={this.shuffleCards(vaultboy)}
+    onClick = {this.verifyClick}
     />
   ))}
   </Wrapper>

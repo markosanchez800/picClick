@@ -8,4 +8,6 @@
 
 .title{
     font-size:60px;
+    color:rgb(15, 91, 153);
+    text-shadow: 0 6px 6px rgb(204, 191, 11), 0 6px 10px rgb(204, 191, 11);
 }
