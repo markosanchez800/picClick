@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import GameCard from './components/GameCards';
+import Wrapper from './components/Wrapper';
 import vaultboy from './vaultboy.json';
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
 
 render() {
   return (
-    <div>
+    <Wrapper>
   {this.state.vaultboy.map(vaultboy => (
     <GameCard
     id={vaultboy.id}
@@ -18,7 +19,7 @@ render() {
     image={vaultboy.image}
     />
   ))}
-  </div>
+  </Wrapper>
   );
 }
 }
