@@ -4,7 +4,7 @@ import './style.css';
 
 function GameCard(props){
     return (
-        <div className='card'>
+        <div className='card col-md-3'>
             <div className='img-container'>
                 <img alt={props.name} src={props.image} /> 
             </div>
