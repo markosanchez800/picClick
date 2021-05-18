@@ -15,21 +15,32 @@ class App extends Component {
     unclicked: vaultboy
   };
 
-  //fisher yates shuffle to randomize cards
   shuffleCards = (array) => {
-    // let oG;
     for (let i = array.length - 1; i > 0; i--)
     {
       let rand = Math.floor(Math.random() * (i + 1));
-      // oG = array[i];
-      // array[i] = array[rand];
-      // array[rand] = oG;
       [array[i], array[rand]] = [array[rand], array[i]]
     }
   }
 
   verifyClick = (name) => {
-    const lookup = 
+    const lookup = this.state.unclicked.find((vaultboy) => vaultboy.name === name);
+    if (lookup === undefined){
+      this.setState({
+        highScore: this.state.currScore > this.state.highScore ? this.state.currScore : this.state.highScore,
+        currScore: 0,
+        message:"u suck",
+        unclicked: vaultboy
+      })
+    } else {
+      const unused = this.state.unclicked.filter((vaultboy) => vaultboy.name !== name)
+      this.setState({
+        currScore: this.state.currScore + 1,
+        message:"nice",
+        unclicked: unused
+      })
+      this.shuffleCards(vaultboy);
+    }
   }
 
 render() {
