@@ -10,24 +10,26 @@ class App extends Component {
     vaultboy: vaultboy,
     message:"To secure your spot in Vault 108, click on all the images without any repeats!",
     currScore: 0,
-    highScore: 0
+    highScore: 0,
+    clicked: vaultboy,
+    unclicked: vaultboy
   };
 
   //fisher yates shuffle to randomize cards
-  shuffleCards = array => {
-    let oG;
+  shuffleCards = (array) => {
+    // let oG;
     for (let i = array.length - 1; i > 0; i--)
     {
       let rand = Math.floor(Math.random() * (i + 1));
-      oG = array[i];
-      array[i] = array[rand];
-      array[rand] = oG;
+      // oG = array[i];
+      // array[i] = array[rand];
+      // array[rand] = oG;
+      [array[i], array[rand]] = [array[rand], array[i]]
     }
-    return array;
   }
 
-  verifyClick = () => {
-    this.shuffleCards(vaultboy);
+  verifyClick = (name) => {
+    const lookup = 
   }
 
 render() {
@@ -41,10 +43,11 @@ render() {
     />
   {this.state.vaultboy.map(vaultboy => (
     <GameCard
+    key = {vaultboy.id}
     id={vaultboy.id}
     name={vaultboy.name}
     image={vaultboy.image}
-    onClick = {this.verifyClick}
+    verifyClick = {this.verifyClick}
     />
   ))}
   </Wrapper>
