@@ -3,6 +3,7 @@ import GameCard from './components/GameCards';
 import Wrapper from './components/Wrapper';
 import Header from './components/Header';
 import TitleCard from './components/TitleCard';
+import Footer from './components/Footer';
 import vaultboy from './vaultboy.json';
 
 class App extends Component {
@@ -61,6 +62,7 @@ render() {
     verifyClick = {this.verifyClick}
     />
   ))}
+  <Footer/>
   </Wrapper>
   );
 }

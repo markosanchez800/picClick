@@ -1,0 +1,10 @@
+.footie {
+    border: 2px solid rgb(15, 91, 153);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(53, 130, 218);
+    color: rgba(255, 251, 2, 0.849);
+    text-align: center;
+    font-size: 30px;;
+}
