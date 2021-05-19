@@ -30,14 +30,14 @@ class App extends Component {
       this.setState({
         highScore: this.state.currScore > this.state.highScore ? this.state.currScore : this.state.highScore,
         currScore: 0,
-        message:"u suck",
+        message:"Wrong answer, Have fun in the wasteland!",
         unclicked: vaultboy
       })
     } else {
       const unused = this.state.unclicked.filter((vaultboy) => vaultboy.name !== name)
       this.setState({
         currScore: this.state.currScore + 1,
-        message:"nice",
+        message:"Correct, you're one step closer!",
         unclicked: unused
       })
       this.shuffleCards(vaultboy);
