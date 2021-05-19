@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/vaultTecMemoryTest/static/css/main.e4d675aa.chunk.css",
+    "main.js": "/vaultTecMemoryTest/static/js/main.639bafbd.chunk.js",
+    "main.js.map": "/vaultTecMemoryTest/static/js/main.639bafbd.chunk.js.map",
+    "runtime-main.js": "/vaultTecMemoryTest/static/js/runtime-main.5379937e.js",
+    "runtime-main.js.map": "/vaultTecMemoryTest/static/js/runtime-main.5379937e.js.map",
+    "static/js/2.53def74c.chunk.js": "/vaultTecMemoryTest/static/js/2.53def74c.chunk.js",
+    "static/js/2.53def74c.chunk.js.map": "/vaultTecMemoryTest/static/js/2.53def74c.chunk.js.map",
+    "index.html": "/vaultTecMemoryTest/index.html",
+    "static/css/main.e4d675aa.chunk.css.map": "/vaultTecMemoryTest/static/css/main.e4d675aa.chunk.css.map",
+    "static/js/2.53def74c.chunk.js.LICENSE.txt": "/vaultTecMemoryTest/static/js/2.53def74c.chunk.js.LICENSE.txt",
+    "static/media/vaultboymotion.9baa338e.gif": "/vaultTecMemoryTest/static/media/vaultboymotion.9baa338e.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5379937e.js",
+    "static/js/2.53def74c.chunk.js",
+    "static/css/main.e4d675aa.chunk.css",
+    "static/js/main.639bafbd.chunk.js"
+  ]
+}
